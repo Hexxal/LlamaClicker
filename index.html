@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+	<meta name="viewport" content="width=device-width; initial-scale=0.6; maximum-scale=0.6; user-scalable=0;"> 
+    	<meta charset=utf-8 />
+    	<title>Clickin' llamas!</title>
+	<script src="js/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="js/general.js"></script>
+	<script type="text/javascript" src="js/messages.js"></script>
+	<script type="text/javascript" src="js/bonuses.js"></script>
+	<script type="text/javascript" src="js/cookies.js"></script>
+    	<link rel="stylesheet" type="text/css" media="screen" href="styles/style.css" />
+    	<!--[if IE]>
+    		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    	<![endif]-->
+</head>
+
+<body onload="disp(); checkCookie();">     
+	<div id="content">
+		<div id="clicks">Clicks: <div id="output"></div><br><br></div>
+		<div id="llama"><a href="javascript:count()"><img src="images/laama.gif" id="llamapic"></a>
+		<p id="message"></p>
+		</div>
+		<div id="bonus">
+			<table id="taulukko">
+			  <tr>
+				<th>Autoclicker</th>
+				<th>Cool llama glasses!</th>
+			  </tr>
+			  <tr>
+				<td>Free click every second</td>
+				<td>w00t!</td>
+			  </tr>
+			  <tr>
+				<td>Cost: 5 clicks</td>
+				<td>Cost: 10 clicks</td>
+			  </tr>
+			  <tr>
+				<td><button onclick="bonus()">Buy</button></td>
+				<td><button onclick="glasses()">Buy</button></td>
+			  </tr>	
+			</table> 
+		</div>
+	</div>
+	<div id="tier">TIER</div>
+</body>
+</html>
